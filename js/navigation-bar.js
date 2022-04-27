@@ -201,7 +201,7 @@ function pagecurrentg() {
                 currentPageNo = 1
             }
 
-            document.write("<script src=\"" + home_page + "feeds/posts/summary?max-results=1&alt=json-in-script&callback=totalcountdata\"><\/script>")
+            document.write("<script src=\'" + home_page + "feeds/posts/summary?max-results=1&alt=json-in-script&callback=totalcountdata\'><\/script>")
         }
 
         else {
