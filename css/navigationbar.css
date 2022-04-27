@@ -1,0 +1,42 @@
+#blog-pager {
+    clear: both;
+    margin: 30px auto;
+    text-align: center;
+    padding: 7px;
+}
+
+.blog-pager {
+    background: none;
+}
+
+.displaypageNum a, .showpage a, .pagecurrent {
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #F4F4F4;
+    background-color: #404042;
+    -webkit-box-shadow: 0px 5px 3px -1px rgba(50, 50, 50, 0.53);
+    -moz-box-shadow: 0px 5px 3px -1px rgba(50, 50, 50, 0.53);
+    box-shadow: 0px 5px 3px -1px rgba(50, 50, 50, 0.53);
+}
+
+    .displaypageNum a:hover, .showpage a:hover, .pagecurrent {
+        background: #EC8D04;
+        text-decoration: none;
+        color: #fff;
+    }
+
+#blog-pager .showpage, #blog-pager, .pagecurrent {
+    font-weight: bold;
+    color: #000;
+}
+
+.showpageOf {
+    display: none !important
+}
+
+#blog-pager .pages {
+    border: none;
+    -webkit-box-shadow: 0px 5px 3px -1px rgba(50, 50, 50, 0.53);
+    -moz-box-shadow: 0px 5px 3px -1px rgba(50, 50, 50, 0.53);
+    box-shadow: 0px 5px 3px -1px rgba(50, 50, 50, 0.53);
+}
