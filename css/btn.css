@@ -1,0 +1,25 @@
+btn-ghost {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,.06);
+}
+
+.btn {
+    color: #757575;
+    padding: 1em;
+    opacity: 1;
+    transition: opacity .3s;
+    border-radius: 3px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
