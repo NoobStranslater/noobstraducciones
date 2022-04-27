@@ -27,8 +27,8 @@
     .controls__next {
         right: 0
     }
-
-.gallery {
+    /* Gallery */
+    .gallery {
         margin-bottom: 1rem;
     }
 
@@ -69,7 +69,8 @@
     .gallery__href::before {
         transition-duration: .5s !important;
     }
-.fas {
+
+    .fas {
         margin-right: 4px;
         display: inline-block;
         font-style: normal;
