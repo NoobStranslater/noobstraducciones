@@ -1,0 +1,44 @@
+/* Contenedor general */
+    #slider-wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        font-family: arial, sans-serif;
+        font-size: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      text-align: center;
+    }
+    /* Ajuste de las imágenes */
+    #slider img {
+        width: 80%;
+        min-height: 100%;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    /* Flechas de navegación */
+    a.more, a.less {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        z-index: 10;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+        color: orange;
+        background: #333;
+        text-decoration: none;
+    }
+
+    a.more {
+        left: 100%;
+        margin-left: -40px;
+    }
