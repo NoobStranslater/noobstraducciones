@@ -91,7 +91,7 @@
     return false;
                 }
             };
-    var grid_div = document.createElement("div);
+    var grid_div = document.createElement("div");
     grid_div.setAttribute("class", "grid-related");
         
     div = document.createElement("div");
