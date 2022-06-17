@@ -24,14 +24,6 @@
         background: #b565a7;
     }
 
-.item-related {
-    width: 31.6%;
-    display: block;
-    float: left;
-    margin-right: 5px;
-    height: 100%;
-}
-
 .grid-related {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
