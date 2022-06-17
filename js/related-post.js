@@ -91,6 +91,9 @@
     return false;
                 }
             };
+    var grid_div = document.createElement("div);
+    grid_div.setAttribute("class", "grid-related");
+        
     div = document.createElement("div");
     div.setAttribute("class", "post-related");
     var adiv, ah3, aa;
@@ -116,8 +119,11 @@
     aa.appendChild(document.createTextNode(relatedPosts[i].title));
     ah3.appendChild(aa);
     adiv.appendChild(ah3);
-    div.appendChild(adiv);
+    grid_div.appendChild(adiv);
             }
+        
+    
+     div.appendChild(grid_div);   
     document.querySelector(".post").appendChild(div);
         };
     script = document.createElement("script");
