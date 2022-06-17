@@ -32,6 +32,12 @@
     height: 100%;
 }
 
+.grid-related {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+
     .item-related:last-child {
         margin: 0 !important;
     }
