@@ -1,5 +1,5 @@
 /* Contenedor general */
-    #slider-wrapper {
+    .sw-container {
         overflow: hidden;
         position: relative;
         width: 800px;
@@ -11,10 +11,10 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-      text-align: center;
+        text-align: center;
     }
     /* Ajuste de las imágenes */
-    #slider img {
+    .sw-gallery img {
         width: 100%;
         min-height: 100%;
         position: relative;
