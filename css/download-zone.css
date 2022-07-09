@@ -1,0 +1,67 @@
+.download-zone, .download-link, .creator-link {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+    .download-link p, .download-link span, .creator-link span {
+        box-sizing: border-box;
+    }
+
+    .download-link p, .creator-link p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .download-link span, .creator-link span {
+        font-size: medium;
+    }
+
+    .creator-link p {
+        margin-bottom: 10px;
+    }
+
+.download-link {
+    gap: 0.15em;
+}
+
+
+.creator-link {
+    gap: 5px;
+}
+
+.download-rectangle, .creator-rectangle {
+    width: 150px;
+    height: 50px;
+    border: 3px solid #555;
+    background: #428bca;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    border-radius: 15px;
+  
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.creator-rectangle {
+    width: 185px;
+}
+
+.download-rectangle:after {
+    content: "descargar";
+}
+
+.creator-rectangle:after {
+    content: "apoya al autor";
+}
+
+.creator-rectangle:hover, .download-rectangle:hover {
+    -webkit-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
