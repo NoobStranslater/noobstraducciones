@@ -31,7 +31,7 @@
     gap: 5px;
 }
 
-.download-rectangle, .creator-rectangle {
+.download-rectangle, .creator-rectangle, .download-mediafire {
     width: 150px;
     height: 50px;
     border: 3px solid #555;
@@ -40,8 +40,6 @@
     margin-right: auto;
     text-transform: uppercase;
     border-radius: 15px;
-  
-  
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -60,11 +58,22 @@
     content: "apoya al autor";
 }
 
-.creator-rectangle:hover, .download-rectangle:hover {
+.creator-rectangle:hover, .download-rectangle:hover, .download-mediafire:hover {
     -webkit-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+
 .password:after {
     content: "Contraseña: noobstranslater"
+}
+
+.download-mediafire {
+    background-image: url("https://1.bp.blogspot.com/-aD9Y-t_HjnA/YL2fja4fKpI/AAAAAAAABKI/OpVgQ-FfY7Y_BN8Pi1nAG084rsuSHJAXwCLcBGAsYHQ/w200-h64/Mediafire.png");
+    width: 200px;
+    height: 64px;
+}
+
+.download-mediafire:after {
+    content: "";    
 }
