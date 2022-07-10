@@ -59,7 +59,7 @@
                 }
     let thumbnail = entries[i].media$thumbnail && entries[i].media$thumbnail.url;
     if (thumbnail) {
-        thumbnail = thumbnail.replace("s72-c", "s300-c");
+        thumbnail = thumbnail.replace("s72-c", "w385-h184-p-k-no-nu");
                 } else if (entries[i].content.$t.match(/(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/)) {
         thumbnail = entries[i].content.$t.match(/(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/)[0];
                 } else {
