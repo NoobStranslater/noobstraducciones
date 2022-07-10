@@ -26,7 +26,7 @@
         }
     bloggerRelatedPosts_callback = function (data) {
             var relatedPosts = [], i, j, k, entries, item, links, categories, clickHandler, div, a, span, atitle, atitlelimit;
-    atitlelimit = 28;
+    atitlelimit = 36;
     for (i = 0, entries = data.feed.entry; i < entries.length; i++) {
         atitle = entries[i].title.$t;
                 if (atitle.length > atitlelimit) {
