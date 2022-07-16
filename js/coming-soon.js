@@ -1,4 +1,4 @@
-function liUpcomming(index, is_link, link, title, actvs, newvs){
+function liUpcomming(index, is_link, link, title, actvs, newvs, img_src){
     //ul principal
     var ulp = document.getElementsByClassName("upcoming-list")[index];
 
@@ -9,7 +9,7 @@ function liUpcomming(index, is_link, link, title, actvs, newvs){
     divp.setAttribute("class", "upcoming-card zone");
 
     var img = document.createElement("img");
-    img.src = "https://lh3.googleusercontent.com/-0zd7kdKg0Zw/Yr4r1kcIcnI/AAAAAAAABXI/ClGV5-8h5eElEz3AMbyUvZnlyxamqus0ACNcBGAsYHQ/s1600/comming-soon.jpeg";
+    img.src = img_src || "https://lh3.googleusercontent.com/-0zd7kdKg0Zw/Yr4r1kcIcnI/AAAAAAAABXI/ClGV5-8h5eElEz3AMbyUvZnlyxamqus0ACNcBGAsYHQ/s1600/comming-soon.jpeg";
     img.alt = "Próximamente";
 
     var div = document.createElement("div");
