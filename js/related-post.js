@@ -9,9 +9,10 @@
     if (document.querySelector === undefined) {
         return;
     }
+
     var config = {}, postLink, postCategories = [], i, links, script;
     config.maxPostsToFetch = (typeof bloggerRelatedPosts_config === "object" && bloggerRelatedPosts_config.maxPostsToFetch) || 100;
-    config.maxPostsToDisplay = (typeof bloggerRelatedPosts_config === "object" && bloggerRelatedPosts_config.maxPostsToDisplay) || 4;
+    config.maxPostsToDisplay = (typeof bloggerRelatedPosts_config === "object" && bloggerRelatedPosts_config.maxPostsToDisplay) || max_posts;
     postLink = document.querySelector("link[rel=canonical]").href;
     if (/\x2F\d{4}\x2F\d{2}\x2F/.test(postLink) === false) {
         return;
@@ -59,7 +60,7 @@
             }
             let thumbnail = entries[i].media$thumbnail && entries[i].media$thumbnail.url;
             if (thumbnail) {
-                thumbnail = thumbnail.replace("s72-c", "w720-h405-p-k-no-nu");
+                thumbnail = thumbnail.replace("s72-c", img_size);
             } else if (entries[i].content.$t.match(/(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/)) {
                 thumbnail = entries[i].content.$t.match(/(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/)[0];
             } else {
