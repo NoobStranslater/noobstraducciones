@@ -103,6 +103,11 @@
             adiv.setAttribute("class", "item-related");
             a = document.createElement("a");
             aa = document.createElement("a");
+            
+            a.setAttribute("target", "_blank");
+            aa.setAttribute("target", "_blank");
+            
+            
             a.href = relatedPosts[i].link;
             aa.href = relatedPosts[i].link;
             a.title = relatedPosts[i].count + " " + (relatedPosts[i].count === 1 ? "categoría" : "categorías") + " en común";
