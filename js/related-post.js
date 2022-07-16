@@ -96,6 +96,7 @@
         
     div = document.createElement("div");
     div.setAttribute("class", "post-related");
+    div.setAttribute("id", "post-related-container");
     var adiv, ah3, aa;
     div.innerHTML = "<div class='post-box'> <h4 class='post-body entry-content float-container heading common-heading'><i aria-hidden='true' class='fa fa-th-list'></i> También te podrían interesar</h4></div>";
     for (i = 0; i < relatedPosts.length; i++) {
