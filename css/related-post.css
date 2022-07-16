@@ -25,6 +25,11 @@
     }
 
 .grid-related {
+    /*
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    gap: 10px;
+    */
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
@@ -41,7 +46,12 @@
         width: 100%;
         object-fit: cover;
         max-height: 405px;
-        max-width: 720px;        
+        max-width: 720px;  
+        /*
+        max-height: 184px;
+        max-width: 385px;
+        height: 184px;
+        */
     }
 
     .item-related h3 {
@@ -59,3 +69,14 @@ img.noops-smly {
     width: 19px;
     display: inline;
 }
+/*
+@media only screen and (max-width: 720px){
+    .item-related {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid-related {
+        grid-template-columns: 1fr;
+    }
+}
+*/
