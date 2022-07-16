@@ -59,7 +59,7 @@
             }
             let thumbnail = entries[i].media$thumbnail && entries[i].media$thumbnail.url;
             if (thumbnail) {
-                thumbnail = thumbnail.replace("s72-c", "w385-h184-p-k-no-nu");
+                thumbnail = thumbnail.replace("s72-c", "w720-h405-p-k-no-nu");
             } else if (entries[i].content.$t.match(/(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/)) {
                 thumbnail = entries[i].content.$t.match(/(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/)[0];
             } else {
@@ -91,15 +91,11 @@
                 return false;
             }
         };
-        var grid_div = document.createElement("div");
-        grid_div.setAttribute("class", "grid-related");
-        grid_div.setAttribute("id", "related-posts");
+        var grid_div = document.getElementById("related-posts");
+        div = document.getElementById("post-related-container");
 
-        div = document.createElement("div");
-        div.setAttribute("class", "post-related");
-        div.setAttribute("id", "post-related-container");
         var adiv, ah3, aa;
-        div.innerHTML = "<div class='post-box'> <h4 class='post-body entry-content float-container heading common-heading'><i aria-hidden='true' class='fa fa-th-list'></i> También te podrían interesar</h4></div>";
+
         for (i = 0; i < relatedPosts.length; i++) {
             adiv = document.createElement("div");
             ah3 = document.createElement("h3")
@@ -126,10 +122,11 @@
 
 
         div.appendChild(grid_div);
-        var rel_script = document.createElement("script");
-        rel_script.setAttribute("class", "rel-post-script");
-        div.appendChild(rel_script);
         document.querySelector(".post").appendChild(div);
+        //only works on noobstraducciones.blogspot.com, if not delete swScript and swButton
+        swScript("#related-posts", "div", ".more-related", ".less-related", ".rel-post-script");
+        swButton("#post-related-container", "less-related fancybox-button fancybox-button--arrow_left", "Anterior", "M11.28 15.7l-1.34 1.37L5 12l4.94-5.07 1.34 1.38-2.68 2.72H19v1.94H8.6z", "0 0 24 24");
+        swButton("#post-related-container", "more-related  fancybox-button fancybox-button--arrow_right", "Siguiente", "M15.4 12.97l-2.68 2.72 1.34 1.38L19 12l-4.94-5.07-1.34 1.38 2.68 2.72H5v1.94z", "0 0 24 24");
     };
     script = document.createElement("script");
     script.src = "/feeds/posts/summary?alt=json&callback=bloggerRelatedPosts_callback&max-results=" + config.maxPostsToFetch + "&q=" + encodeURIComponent('label:"' + postCategories.join('" | label:"') + '"');
