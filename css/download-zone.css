@@ -8,6 +8,8 @@
     .download-link p, .download-link span, .creator-link span {
         box-sizing: border-box;
     }
+    
+    
 
     .download-link p, .creator-link p {
         margin-bottom: 0;
@@ -18,8 +20,8 @@
         font-size: medium;
     }
 
-    .creator-link p {
-        margin-bottom: 10px;
+    .download-zone p {
+        margin-top: 0;
     }
 
 .download-link {
