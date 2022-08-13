@@ -5,6 +5,10 @@
     justify-content: space-between;
 }
 
+.creator-link p:first-child::after {
+    content: "Apoya al creador del juego";
+  }
+
     .download-link p, .download-link span, .creator-link span {
         box-sizing: border-box;
     }
