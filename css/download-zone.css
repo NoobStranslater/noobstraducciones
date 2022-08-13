@@ -31,7 +31,7 @@
     gap: 5px;
 }
 
-.download-rectangle, .creator-rectangle, .download-mediafire, .creator-support-patreon, creator-support-itchio {
+.download-rectangle, .creator-rectangle, .download-mediafire, .creator-support-patreon, .creator-support-itchio {
     width: 150px;
     height: 50px;
     border: 3px solid #555;
@@ -58,7 +58,7 @@
     content: "apoya al autor";
 }
 
-.creator-rectangle:hover, .download-rectangle:hover, .download-mediafire:hover, .creator-support-patreon:hover, creator-support-itchio:hover {
+.creator-rectangle:hover, .download-rectangle:hover, .download-mediafire:hover, .creator-support-patreon:hover, .creator-support-itchio:hover {
     -webkit-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -68,7 +68,7 @@
     content: "Contraseña: noobstranslater"
 }
 
-.download-mediafire, .creator-support-patreon, creator-support-itchio {
+.download-mediafire, .creator-support-patreon, .creator-support-itchio {
     width: 200px;
     height: 64px;
 }
@@ -81,10 +81,10 @@
     background-image: url("https://lh3.googleusercontent.com/-NB0mvo1PPdg/Yvgb7cm9pLI/AAAAAAAABdU/7ODs-9fLca0W-Hr9aSh0_ECPF5eXqfafgCNcBGAsYHQ/s1600/Patreon%2Blogo.png");
 }
 
-.creator-support-patreon {
+.creator-support-itchio {
     background-image: url("https://lh3.googleusercontent.com/-8zebcngpZg4/Yvgb7cUqySI/AAAAAAAABdY/hLiRaiKLAagCmG-nywZsKl9sXIRYe1FYgCNcBGAsYHQ/s1600/itchio%2Blogo.png");
 }
 
-.download-mediafire:after, .creator-support-patreon:after, creator-support-itchio:after {
+.download-mediafire:after, .creator-support-patreon:after, .creator-support-itchio:after {
     content: "";    
 }
