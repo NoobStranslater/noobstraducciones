@@ -40,3 +40,7 @@
     margin: 0px 0px 1.5rem;
     color: lightcyan;
 }
+
+#information-list strong::after {
+    content: "\ \ ";
+  }
