@@ -68,7 +68,7 @@
     content: "Contraseña: noobstranslater"
 }
 
-.download-mediafire, .creator-support-patreon:hover, creator-support-itchio:hover {
+.download-mediafire, .creator-support-patreon, creator-support-itchio {
     width: 200px;
     height: 64px;
 }
@@ -77,6 +77,14 @@
     background-image: url("https://1.bp.blogspot.com/-aD9Y-t_HjnA/YL2fja4fKpI/AAAAAAAABKI/OpVgQ-FfY7Y_BN8Pi1nAG084rsuSHJAXwCLcBGAsYHQ/w200-h64/Mediafire.png");
 }
 
-.download-mediafire:after {
+.creator-support-patreon {
+    background-image: url("https://lh3.googleusercontent.com/-NB0mvo1PPdg/Yvgb7cm9pLI/AAAAAAAABdU/7ODs-9fLca0W-Hr9aSh0_ECPF5eXqfafgCNcBGAsYHQ/s1600/Patreon%2Blogo.png");
+}
+
+.creator-support-patreon {
+    background-image: url("https://lh3.googleusercontent.com/-8zebcngpZg4/Yvgb7cUqySI/AAAAAAAABdY/hLiRaiKLAagCmG-nywZsKl9sXIRYe1FYgCNcBGAsYHQ/s1600/itchio%2Blogo.png");
+}
+
+.download-mediafire:after, .creator-support-patreon:after, creator-support-itchio:after {
     content: "";    
 }
