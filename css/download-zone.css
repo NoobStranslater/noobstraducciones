@@ -95,7 +95,7 @@
     content: "";    
 }
 
-#support-me:after {
+#support-me-link:after {
     content:"También puedes apoyarme";
 }
 
