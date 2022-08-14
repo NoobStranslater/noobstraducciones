@@ -1,4 +1,4 @@
-.download-zone, .download-link, .creator-link {
+.download-zone, .download-link, .creator-link, .support-link {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -15,7 +15,7 @@
     
     
 
-    .download-link p, .creator-link p {
+    .download-link p, .creator-link p, .support-link {
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -28,7 +28,7 @@
         margin-top: 0;
     }
 
-.download-link {
+.download-link, .support-link {
     gap: 0.15em;
 }
 
@@ -37,7 +37,7 @@
     gap: 5px;
 }
 
-.download-rectangle, .creator-rectangle, .download-mediafire, .creator-support-patreon, .creator-support-itchio {
+.download-rectangle, .creator-rectangle, .download-mediafire, .creator-support-patreon, .creator-support-itchio, .support-me  {
     width: 150px;
     height: 50px;
     border: 3px solid #555;
@@ -64,7 +64,7 @@
     content: "apoya al autor";
 }
 
-.creator-rectangle:hover, .download-rectangle:hover, .download-mediafire:hover, .creator-support-patreon:hover, .creator-support-itchio:hover {
+.creator-rectangle:hover, .download-rectangle:hover, .download-mediafire:hover, .creator-support-patreon:hover, .creator-support-itchio:hover, .support-me:hover {
     -webkit-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -93,4 +93,12 @@
 
 .download-mediafire:after, .creator-support-patreon:after, .creator-support-itchio:after {
     content: "";    
+}
+
+#support-me:after {
+    content:"También puedes apoyarme";
+}
+
+.support-me:after {
+    content: "Click Aquí";
 }
