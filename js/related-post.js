@@ -1,4 +1,4 @@
-// JavaScript source code
+        // JavaScript source code
 /*
  * Blogger Related Posts Widget v1.0.4
  * https://github.com/salmanarshad2000/blogger-related-posts-widget
@@ -92,47 +92,44 @@
                 return false;
             }
         };
-        var grid_div = document.getElementById("related-posts");
-        div = document.getElementById("post-related-container");
 
-        var adiv, ah3, aa;
-
+        var adiv, img, gdiv;
+        adiv = document.getElementsByClassName("carousel__item");
         for (i = 0; i < relatedPosts.length; i++) {
-            adiv = document.createElement("div");
-            ah3 = document.createElement("h3")
-            adiv.setAttribute("class", "item-related");
+            gdiv = document.createElement("div");
+            span = document.createElement("span");
+
+            gdiv.setAttribute("class", "gallery__title");
+
             a = document.createElement("a");
-            aa = document.createElement("a");
-            
+            a.setAttribute("class", "gallery__href");
             a.setAttribute("target", "_blank");
-            aa.setAttribute("target", "_blank");
+
+            span.setAttribute("class", "rel__title skin-font");
+            span.appendChild(document.createTextNode(relatedPosts[i].title));
             
+            gdiv.appendChild(span);
             
             a.href = relatedPosts[i].link;
-            aa.href = relatedPosts[i].link;
             a.title = relatedPosts[i].count + " " + (relatedPosts[i].count === 1 ? "categoría" : "categorías") + " en común";
+            a.setAttribute("alt", relatedPosts[i].title);
             a.onclick = clickHandler;
-            a.class = "link";
-            span = document.createElement("img");
+            
+            
+            img = document.createElement("img");
             if (relatedPosts[i].icon) {
-                span.setAttribute("src", relatedPosts[i].icon.src);
+                img.setAttribute("src", relatedPosts[i].icon.src);
             }
-            a.appendChild(span);
-            small = document.createElement("small");
-            adiv.appendChild(a);
-            aa.appendChild(document.createTextNode(relatedPosts[i].title));
-            ah3.appendChild(aa);
-            adiv.appendChild(ah3);
-            grid_div.appendChild(adiv);
+
+            a.appendChild(img);
+            a.appendChild(gdiv);
+
+            adiv.item(i).appendChild(a);
         }
 
 
-        div.appendChild(grid_div);
-        document.querySelector(".post").appendChild(div);
-        //only works on noobstraducciones.blogspot.com, if not delete swScript and swButton
-        swScript("#related-posts", "div", ".more-related", ".less-related", ".rel-post-script");
-        swButton("#post-related-container", "less-related fancybox-button fancybox-button--arrow_left", "Anterior", "M11.28 15.7l-1.34 1.37L5 12l4.94-5.07 1.34 1.38-2.68 2.72H19v1.94H8.6z", "0 0 24 24");
-        swButton("#post-related-container", "more-related  fancybox-button fancybox-button--arrow_right", "Siguiente", "M15.4 12.97l-2.68 2.72 1.34 1.38L19 12l-4.94-5.07-1.34 1.38 2.68 2.72H5v1.94z", "0 0 24 24");
+        //div.appendChild(grid_div);
+        document.querySelector(".post").appendChild(document.getElementById("post-related-container"));
     };
     script = document.createElement("script");
     script.src = "/feeds/posts/summary?alt=json&callback=bloggerRelatedPosts_callback&max-results=" + config.maxPostsToFetch + "&q=" + encodeURIComponent('label:"' + postCategories.join('" | label:"') + '"');
