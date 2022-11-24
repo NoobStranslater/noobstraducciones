@@ -1,0 +1,22 @@
+#blog-pager, .blog-pager {
+  display:block;
+  padding:5px 0;
+}
+.showpage a, .pagenumber a, .totalpages, .current {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 2px;
+  background: #263339;
+  color: white;
+  border: 1px solid black;
+  font-size: 12px;
+  border-radius: 2px;
+  transition: all .3s;
+}
+
+.showpage a:hover, .pagenumber a:hover, .current {
+  background: #344b54;
+  color: #ffffff;
+  text-decoration:none;
+}

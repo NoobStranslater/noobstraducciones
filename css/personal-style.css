@@ -44,3 +44,15 @@
 #information-list strong::after {
     content: "\ \ ";
   }
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.none-decoration {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bold;
+}
