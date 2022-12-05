@@ -1,4 +1,4 @@
-function liUpcomming(index, is_link, link, title, actvs, newvs, img_src){
+function liUpcomming(index, is_link, link, title, actvs, newvs, img_src, is_exclusive=false){
     //ul principal
     var ulp = document.getElementsByClassName("upcoming-list")[index];
 
@@ -35,10 +35,11 @@ function liUpcomming(index, is_link, link, title, actvs, newvs, img_src){
     }
     li1.appendChild(strong1);
     li1.appendChild(document.createTextNode(actvs));
+
     //puts
     ul.appendChild(li1);
     if(is_link){
-        var a = document.createElement("a");
+        let a = document.createElement("a");
         a.href = link;
         a.setAttribute("target", "_blank")
         a.appendChild(h1);
@@ -48,6 +49,18 @@ function liUpcomming(index, is_link, link, title, actvs, newvs, img_src){
     else {
         div.appendChild(h1);
     }
+    if(is_exclusive) {
+        //pateron exclusive
+        const li3 = document.createElement('li');
+        li3.appendChild(document.createTextNode('Disponible ya en '))
+        const patreon = document.createElement('a');
+        patreon.appendChild('Patreon');
+        patreon.setAttribute('target', '_blank');
+        patreon.href = 'https://www.patreon.com/noobstranslater'
+        li3.appendChild(patreon);
+        ul.appendChild(li3);
+    }
+
     div.appendChild(ul);
 
     divp.appendChild(img);
