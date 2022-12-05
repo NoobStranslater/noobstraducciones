@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
 }
-    .upcoming-list li {
+    .upcoming-list > li {
         display: flex;
         justify-content: center;
         align-items: center;
