@@ -135,3 +135,25 @@
     script.src = "/feeds/posts/summary?alt=json&callback=bloggerRelatedPosts_callback&max-results=" + config.maxPostsToFetch + "&q=" + encodeURIComponent('label:"' + postCategories.join('" | label:"') + '"');
     document.querySelector("head").appendChild(script);
 })();
+
+//tns-carrousel
+const carousel_related = tns({
+    container: '.related__content', nav: false, arrowKeys: false, useLocalStorage: false,
+    items: 1, responsive: {
+        576: { items: 1 },
+        620: { items: 2, slideBy: 2 },
+        800: { items: 2, slideBy: 2 }
+    },
+    nextButton: '.related__next', prevButton: '.related__prev',
+    gutter: 2,
+    slideBy: 1,
+    autoplay: true,
+    swipeAngle: false,
+    autoplayHoverPause: true,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    autoplayTimeout: 2500,
+    loop: false,
+    rewind: true,
+    speed: 600
+});
