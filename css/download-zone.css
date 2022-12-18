@@ -1,104 +1,104 @@
 .download-zone, .download-link, .creator-link, .support-link {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .creator-link p:first-child::after {
-    content: "Apoya al creador del juego";
+  content: "Apoya al creador del juego";
+}
+
+  .download-link p, .download-link span, .creator-link span {
+    box-sizing: border-box;
   }
 
-    .download-link p, .download-link span, .creator-link span {
-        box-sizing: border-box;
-    }
-    
-    
 
-    .download-link p, .creator-link p, .support-link p {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
 
-    .download-link span, .creator-link span {
-        font-size: medium;
-    }
+.download-link p, .creator-link p, .support-link p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 
-    .download-zone p {
-        margin-top: 0;
-    }
+  .download-link span, .creator-link span {
+    font-size: medium;
+  }
+
+.download-zone p {
+  margin-top: 0;
+}
 
 .download-link, .support-link {
-    gap: 0.15em;
+  gap: 0.15em;
 }
 
 
 .creator-link {
-    gap: 5px;
+  gap: 5px;
 }
 
 .download-rectangle, .creator-rectangle, .download-mediafire, .creator-support-patreon, .creator-support-itchio, .support-me  {
-    width: 150px;
-    height: 50px;
-    border: 3px solid #555;
-    background: #428bca;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: uppercase;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    letter-spacing: 1px;
+  width: 150px;
+  height: 50px;
+  border: 3px solid #555;
+  background: #428bca;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  letter-spacing: 1px;
 }
 
-.creator-rectangle {
+  .creator-rectangle {
     width: 185px;
-}
+  }
 
-.download-rectangle:after {
+  .download-rectangle:after {
     content: "descargar";
-}
+  }
 
-.creator-rectangle:after {
+  .creator-rectangle:after {
     content: "apoya al autor";
-}
+  }
 
-.creator-rectangle:hover, .download-rectangle:hover, .download-mediafire:hover, .creator-support-patreon:hover, .creator-support-itchio:hover, .support-me:hover {
+  .creator-rectangle:hover, .download-rectangle:hover, .download-mediafire:hover, .creator-support-patreon:hover, .creator-support-itchio:hover, .support-me:hover {
     -webkit-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow: rgba(200,200,200,0.8) 0px 3px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
+  }
 
 .password:after {
-    content: "Contraseña: noobstranslater"
+  content: "Contraseña: noobstranslater"
 }
 
 .download-mediafire, .creator-support-patreon, .creator-support-itchio {
-    width: 200px;
-    height: 64px;
+  width: 200px;
+  height: 64px;
 }
 
 .download-mediafire {
-    background-image: url("https://1.bp.blogspot.com/-aD9Y-t_HjnA/YL2fja4fKpI/AAAAAAAABKI/OpVgQ-FfY7Y_BN8Pi1nAG084rsuSHJAXwCLcBGAsYHQ/w200-h64/Mediafire.png");
+  background-image: url("https://1.bp.blogspot.com/-aD9Y-t_HjnA/YL2fja4fKpI/AAAAAAAABKI/OpVgQ-FfY7Y_BN8Pi1nAG084rsuSHJAXwCLcBGAsYHQ/w200-h64/Mediafire.png");
 }
 
 .creator-support-patreon {
-    background-image: url("https://lh3.googleusercontent.com/-NB0mvo1PPdg/Yvgb7cm9pLI/AAAAAAAABdU/7ODs-9fLca0W-Hr9aSh0_ECPF5eXqfafgCNcBGAsYHQ/s1600/Patreon%2Blogo.png");
+  background-image: url("https://lh3.googleusercontent.com/-NB0mvo1PPdg/Yvgb7cm9pLI/AAAAAAAABdU/7ODs-9fLca0W-Hr9aSh0_ECPF5eXqfafgCNcBGAsYHQ/s1600/Patreon%2Blogo.png");
 }
 
 .creator-support-itchio {
-    background-image: url("https://lh3.googleusercontent.com/-8zebcngpZg4/Yvgb7cUqySI/AAAAAAAABdY/hLiRaiKLAagCmG-nywZsKl9sXIRYe1FYgCNcBGAsYHQ/s1600/itchio%2Blogo.png");
+  background-image: url("https://lh3.googleusercontent.com/-8zebcngpZg4/Yvgb7cUqySI/AAAAAAAABdY/hLiRaiKLAagCmG-nywZsKl9sXIRYe1FYgCNcBGAsYHQ/s1600/itchio%2Blogo.png");
 }
 
 .download-mediafire:after, .creator-support-patreon:after, .creator-support-itchio:after {
-    content: "";    
+  content: "";
 }
 
 #support-me-link:after {
-    content:"También puedes apoyarme";
+  content:"También puedes apoyarme";
 }
 
 .support-me:after {
-    content: "Click Aquí";
+  content: "Click Aquí";
 }

@@ -1,58 +1,58 @@
 .list {
-    box-sizing: border-box;
-    list-style-image: initial;
-    list-style-position: initial;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+  box-sizing: border-box;
+  list-style-image: initial;
+  list-style-position: initial;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
 }
 
-    .list li {
-        text-align: left;
-        list-style: none;
-        margin-bottom: 0px;
-    }
+.list li {
+  text-align: left;
+  list-style: none;
+  margin-bottom: 0px;
+}
 
-    .list strong {
-        color: crimson;
-        margin-bottom: 0px;
-    }
+.list strong {
+  color: crimson;
+  margin-bottom: 0px;
+}
 
 .content {
-    text-align: center;
-    display: block;
+  text-align: center;
+  display: block;
 }
 
 .main {
-    background-color: black;
-    box-sizing: border-box;
-    color: #d8d8d8;
-    font-family: Chewy, Roboto, sans-serif;
-    font-size: 16px;
+  background-color: black;
+  box-sizing: border-box;
+  color: #d8d8d8;
+  font-family: Chewy, Roboto, sans-serif;
+  font-size: 16px;
 }
 
 .subtitle {
-    box-sizing: border-box;
-    font-family: inherit;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.2;
-    margin: 0px 0px 1.5rem;
-    color: lightcyan;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0px 0px 1.5rem;
+  color: lightcyan;
 }
 
 #information-list strong::after {
-    content: "\ \ ";
-  }
+  content: "\ \ ";
+}
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .none-decoration {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }

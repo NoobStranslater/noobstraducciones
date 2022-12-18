@@ -1,74 +1,74 @@
 .post-related {
-    display: inline-block;
-    background: #263339;
-    width: 100%;
-    text-align: center;
+  display: inline-block;
+  background: #263339;
+  width: 100%;
+  text-align: center;
 }
 
 .post-box .heading {
-    margin-bottom: 10px;
-    text-align: center;
-    margin-top: 10px;
-    position: relative;
-    font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  font-size: 1rem;
 }
 
-    .post-box .heading:after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -11px;
-        width: 21px;
-        height: 1px;
-        margin-top: 2px;
-        background: #b565a7;
-    }
+  .post-box .heading:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -11px;
+    width: 21px;
+    height: 1px;
+    margin-top: 2px;
+    background: #b565a7;
+  }
 
 .grid-related {
-    /*
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
-    gap: 10px;
-    */
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+  /*
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  gap: 10px;
+  */
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
-    .item-related .link {
-        display: block;
-        margin: -1px;
-        margin-bottom: 0;
-    }
+.item-related .link {
+  display: block;
+  margin: -1px;
+  margin-bottom: 0;
+}
 
-    .item-related img {
-        display: block;
-        opacity: 1;
-        width: 100%;
-        object-fit: cover;
-        max-height: 405px;
-        max-width: 720px;  
-        /*
-        max-height: 184px;
-        max-width: 385px;
-        height: 184px;
-        */
-    }
+.item-related img {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  object-fit: cover;
+  max-height: 405px;
+  max-width: 720px;
+  /*
+  max-height: 184px;
+  max-width: 385px;
+  height: 184px;
+  */
+}
 
-    .item-related h3 {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71429;
-        font-family: Muli;
-        text-transform: uppercase;
-        margin: 0.35em 0;
-    }
+.item-related h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  font-family: Muli;
+  text-transform: uppercase;
+  margin: 0.35em 0;
+}
 
 img.noops-smly {
-    padding: 0 !important;
-    margin-top: -2px !important;
-    width: 19px;
-    display: inline;
+  padding: 0 !important;
+  margin-top: -2px !important;
+  width: 19px;
+  display: inline;
 }
 /*
 @media only screen and (max-width: 720px){
