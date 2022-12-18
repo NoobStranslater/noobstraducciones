@@ -10,6 +10,7 @@
     text-align: center;
     margin-top: 10px;
     position: relative;
+    font-size: 1rem;
 }
 
     .post-box .heading:after {
