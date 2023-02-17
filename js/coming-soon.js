@@ -1,4 +1,4 @@
-function liUpcomming(index, is_link, link, title, actvs, newvs, img_src, is_exclusive=false){
+function liUpcomming(index, is_link, link, title, actvs, newvs, img_src, is_exclusive=false, platform=' (PC-Android)'){
     //ul principal
     var ulp = document.getElementsByClassName("upcoming-list")[index];
 
@@ -54,7 +54,7 @@ function liUpcomming(index, is_link, link, title, actvs, newvs, img_src, is_excl
         const li3 = document.createElement('li');
         li3.appendChild(document.createTextNode('Disponible ya en '))
         const patreon = document.createElement('a');
-        patreon.appendChild(document.createTextNode('Patreon'));
+        patreon.appendChild(document.createTextNode('Patreon' + platform));
         patreon.setAttribute('target', '_blank');
         patreon.href = 'https://www.patreon.com/noobstranslater'
         li3.appendChild(patreon);
