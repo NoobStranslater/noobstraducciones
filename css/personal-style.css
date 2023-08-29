@@ -58,13 +58,17 @@
 }
 
 .abandoned-game, .onhold-game {
-  width: 80px;
+  /*width: 80px;
   height: 80px;
-  background-image: url("https://lh3.googleusercontent.com/-xZPahsOyvRI/ZO5RoGP2YgI/AAAAAAAAB_Y/XqgEcCMBF4ITYlhNzNAqGQNXZIAAIgrrACNcBGAsYHQ/s1600/abandonado.png");
+  background-image: url("https://lh3.googleusercontent.com/-xZPahsOyvRI/ZO5RoGP2YgI/AAAAAAAAB_Y/XqgEcCMBF4ITYlhNzNAqGQNXZIAAIgrrACNcBGAsYHQ/s1600/abandonado.png");*/
+  width: 40px;
+  height: 40px;
+  background-image: url("https://lh3.googleusercontent.com/-fW10LOKkY3E/ZO5TEB5J1-I/AAAAAAAAB_g/mA9lq3heN1kkFQTyLlVl4mSWsCG_V4i4wCNcBGAsYHQ/s1600/abandoned.png");
   position: absolute;
   top: 0;
   right: 0;
 }
 .onhold-game {
-  background-image: url("https://lh3.googleusercontent.com/-1y7Sy95TOoQ/ZO5RoOlWT4I/AAAAAAAAB_U/bEw1MO1wh3wHFwCEiNp_CEfA_3j_2gdtwCNcBGAsYHQ/s1600/espera.png");
+  /*background-image: url("https://lh3.googleusercontent.com/-1y7Sy95TOoQ/ZO5RoOlWT4I/AAAAAAAAB_U/bEw1MO1wh3wHFwCEiNp_CEfA_3j_2gdtwCNcBGAsYHQ/s1600/espera.png");*/
+  background-image: url("https://lh3.googleusercontent.com/-JNHdOWHEi3c/ZO5TEO5xzYI/AAAAAAAAB_k/5k4OJqvJl64f3aLwvLBWKKq-qz4c1WzSACNcBGAsYHQ/s1600/onhold.png");
 }
