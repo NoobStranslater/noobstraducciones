@@ -58,15 +58,13 @@
 }
 
 .abandoned-game, .onhold-game {
-  width: 0;
-  height: 0;
-  border-left: 40px solid transparent;
-  border-bottom: 40px solid transparent;
-  border-top: 40px solid #ff9800; /* Change the color as needed */
+  width: 80px;
+  height: 80px;
+  background-image: url("https://lh3.googleusercontent.com/-xZPahsOyvRI/ZO5RoGP2YgI/AAAAAAAAB_Y/XqgEcCMBF4ITYlhNzNAqGQNXZIAAIgrrACNcBGAsYHQ/s1600/abandonado.png");
   position: absolute;
   top: 0;
   right: 0;
 }
 .onhold-game {
-  border-top: 40px solid #2ebcfc;
+  background-image: url("https://lh3.googleusercontent.com/-1y7Sy95TOoQ/ZO5RoOlWT4I/AAAAAAAAB_U/bEw1MO1wh3wHFwCEiNp_CEfA_3j_2gdtwCNcBGAsYHQ/s1600/espera.png");
 }
