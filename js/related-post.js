@@ -96,6 +96,7 @@
     var adiv, img, gdiv;
     adiv = document.getElementsByClassName("carousel__item");
     for (i = 0; i < relatedPosts.length; i++) {
+      item = relatedPosts[i];
       gdiv = document.createElement("div");
       span = document.createElement("span");
 
@@ -105,20 +106,27 @@
       a.setAttribute("class", "gallery__href");
       a.setAttribute("target", "_blank");
 
+      if(item.categories.includes("abandonado") || item.categories.includes("en espera")) {
+        const triangle = document.createElement("span")
+        triangle.setAttribute("class", item.categories.includes("abandonado") ? "abandoned-game" : "onhold-game");
+        triangle.setAttribute("style", "padding-right: 2px;")
+        a.appendChild(triangle)
+      }
+
       span.setAttribute("class", "rel__title skin-font");
-      span.appendChild(document.createTextNode(relatedPosts[i].title));
+      span.appendChild(document.createTextNode(item.title));
 
       gdiv.appendChild(span);
 
-      a.href = relatedPosts[i].link;
-      a.title = relatedPosts[i].count + " " + (relatedPosts[i].count === 1 ? "categoría" : "categorías") + " en común";
-      a.setAttribute("alt", relatedPosts[i].title);
+      a.href = item.link;
+      a.title = item.count + " " + (item.count === 1 ? "categoría" : "categorías") + " en común";
+      a.setAttribute("alt", item.title);
       a.onclick = clickHandler;
 
 
       img = document.createElement("img");
-      if (relatedPosts[i].icon) {
-        img.setAttribute("src", relatedPosts[i].icon.src);
+      if (item.icon) {
+        img.setAttribute("src", item.icon.src);
       }
 
       a.appendChild(img);
